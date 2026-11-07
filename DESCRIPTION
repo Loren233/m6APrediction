@@ -2,8 +2,8 @@ Package: m6APrediction
 Title: Prediction of RNA m6A Sites Using Random Forest
 Version: 1.0.0
 Authors@R:
-    person("YOUR_FIRST_NAME", "YOUR_LAST_NAME",
-           email = "YOUR_EMAIL@example.com",
+    person("Zhike", "Fu",
+           email = "Zhike.Fu24@student.xjtlu.edu.cn",
            role = c("aut", "cre"))
 Description: Provides random forest-based prediction of RNA
     N6-methyladenosine (m6A) sites using sequence and transcript
