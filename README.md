@@ -109,22 +109,34 @@ predicted m6A probability and classification status.
 A site is classified as Positive when its predicted
 probability exceeds the specified threshold.
 
+
 ## Model Performance
 
-ROC and precision-recall (PRC) curves provide complementary
-views of classification performance.
+Model performance was evaluated using an 80/20 random
+train-test split of the m6A dataset (random seed = 123).
+A Random Forest classifier was trained on the training
+subset and evaluated on the held-out test subset.
 
-### Receiver Operating Characteristic (ROC)
+The evaluation achieved:
 
-![ROC curve](images/roc.png)
+- **AUROC:** 0.8870
+- **AUPRC:** 0.7073
 
-### Precision-Recall Curve (PRC)
+The ROC and PRC curves below illustrate the
+classification performance on the test subset.
 
-![PRC curve](images/prc.png)
+### ROC Curve
 
-The evaluation dataset, model configuration, and performance
-metrics should be reported alongside these figures to
-support their interpretation.
+![ROC Curve](images/roc.png)
+
+### Precision-Recall Curve
+
+![PRC Curve](images/prc.png)
+
+The evaluation model was trained on 80% of the dataset,
+while the pretrained model distributed with this package
+was trained on the full dataset.
+
 
 ## License
 
