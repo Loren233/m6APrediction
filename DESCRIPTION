@@ -10,7 +10,7 @@ Description: Provides random forest-based prediction of RNA
     features. Supports predictions for individual sites and batches
     of observations, returning probabilities and classification
     results. Includes a pretrained model and example input data.
-License: MIT + file LICENSE
+License: MIT
 Depends:
     R (>= 3.5.0)
 Imports:
